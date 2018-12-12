@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Servidor;
 
 import java.io.Serializable;
