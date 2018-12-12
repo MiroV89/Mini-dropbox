@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Servidor;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
@@ -31,7 +24,7 @@ public class ServicioAutenticacionImpl implements ServicioAutenticacionInterface
 		//UnicastRemoteObject.unexportObject(servicioA, true);
 	}
 	
-	//Metodo encargado de autenticar un cliente, comprueba que existe el nombre del cliente y coincide con la contraseña
+	//Metodo encargado de autenticar un cliente, comprueba que existe el nombre del cliente y coincide con la contraseÃ±a
 		@Override
 		public String autenticarCl(String nombre, String pass) throws RemoteException {
 			String auten=servicioDatos.consultaCl(nombre, pass);
