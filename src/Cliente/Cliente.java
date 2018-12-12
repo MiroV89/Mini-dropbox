@@ -1,11 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
-
 package Cliente;
 
 import java.io.File;
@@ -46,12 +38,12 @@ public class Cliente {
 		}
 		catch (Exception exception) {System.out.println("Servidor deconectado.");}
 		}
-	//Constructor que asigna el nombre y contraseña al cliente
+	//Constructor que asigna el nombre y contraseÃ±a al cliente
 	public Cliente(String nombre, String pass){
 		this.nombre=nombre;
 		this.pass=pass;
 	}
-	//Constructor que asigna nombre, contraseña e identificador al cliente
+	//Constructor que asigna nombre, contraseÃ±a e identificador al cliente
 	public Cliente(String nombre, String pass, String ID){
 		this.nombre=nombre;
 		this.pass=pass;
@@ -88,19 +80,19 @@ public class Cliente {
 		}catch (Exception e){System.out.println("Ha ocurrido un error con el registro, vuelva a intentarlo."); menuPrincipal();}
 	}
 	
-	//Metodo de registro, pide los datos de nombre y contraseña para el nuevo cliente y accede al servicio de Autenticacion
+	//Metodo de registro, pide los datos de nombre y contraseÃ±a para el nuevo cliente y accede al servicio de Autenticacion
 	private void registrarse() throws NotBoundException, IOException {
 		String nombre = GUI.input("Registro nuevo", "Ingrese su nombre: ");
-		String pass = GUI.input("Ingrese contraseña: ");
+		String pass = GUI.input("Ingrese contraseÃ±a: ");
 		boolean registrado=servicioA.registrarCl(nombre, pass);
 		if(!registrado){System.out.println("Nombre de usuario no disponible");}
 		menuPrincipal();
 	}
 	
-	//Metodo de autenticacion, pide los datos de nombre y contraseña del cliente y accede al servicio de Autenticacion
+	//Metodo de autenticacion, pide los datos de nombre y contraseÃ±a del cliente y accede al servicio de Autenticacion
 	private void autenticarse() throws NotBoundException, IOException {
 		String nombre = GUI.input("Autenticarse", "Ingrese su nombre: ");
-		String pass = GUI.input("Ingrese contraseña: ");
+		String pass = GUI.input("Ingrese contraseÃ±a: ");
 		ID=servicioA.autenticarCl(nombre, pass);
 		if(ID==null){
 			System.out.println("Datos incorrectos, intentelo de nuevo");
@@ -230,7 +222,7 @@ public class Cliente {
 		System.out.println(listasCl);
 	}
 	
-	//Metodo que imprime por pantalla los ficheros del cliente, así como los ficheros compartidos de otros clientes
+	//Metodo que imprime por pantalla los ficheros del cliente, asÃ­ como los ficheros compartidos de otros clientes
 	public void listarFicheros() throws NotBoundException, IOException{
 		System.out.println("\t=== MIS FICHEROS ===");
 		String listasF=servicioG.listarFicheros(this.nombre);
