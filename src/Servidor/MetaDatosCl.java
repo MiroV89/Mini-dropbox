@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Servidor;
 
 import java.io.Serializable;
@@ -64,7 +57,7 @@ public class MetaDatosCl implements Serializable{
 		return listaComp;
 	}
 	
-	//Metodo que añade un nuevo fichero a la base de datos
+	//Metodo que aÃ±ade un nuevo fichero a la base de datos
 	public void nuevoFichero(String FN, String FP, long Fpe, String FF){
 		listaF.add(new MetaDatosF(FN, CNombre, Fpe, FF));
 	}
@@ -92,7 +85,7 @@ public class MetaDatosCl implements Serializable{
 		return listaFicheros;
 	}
 
-	//Metodo que comprueba la contraseña de un cliente
+	//Metodo que comprueba la contraseÃ±a de un cliente
 	public boolean compruebaPass(String pass){
 		if(pass.equals(this.Cpass)) return true;
 		return false;
