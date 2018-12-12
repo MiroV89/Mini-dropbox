@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Common;
 
 import java.io.*;
@@ -84,7 +77,7 @@ public class Fichero implements Serializable{
 			cs.close();
 			if (CheckSum != this.checksum)
 			{
-				return (false);	//Falla el checksum, debería mandarse de nuevo
+				return (false);	//Falla el checksum, deberÃ­a mandarse de nuevo
 			}			
 		}catch(Exception e){
 			System.err.println("Error escribiendo fichero" + e.toString());
