@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Repositorio;
 
 import java.io.File;
@@ -48,7 +41,7 @@ public class Repositorio{
 		this.nombre=nombre;
 		this.ID=ID;
 	}
-	//Metodo que añade un cliente nuevo a la lista local del repositorio en cuestion
+	//Metodo que aÃ±ade un cliente nuevo a la lista local del repositorio en cuestion
 	public void nuevoCliente(String clID){
 		listaIDClientes.add(clID);
 	}
