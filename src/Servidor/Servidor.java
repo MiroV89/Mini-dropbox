@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Servidor;
 import java.io.IOException;
 import java.rmi.NotBoundException;
@@ -45,7 +38,7 @@ public class Servidor implements IServidor {
 			UnicastRemoteObject.unexportObject(servidor, true);
 			System.out.println("Servidor Terminado");
 		}
-		catch (ExportException e){System.out.println("Error: El servidor ya est· ejecutandose o el puerto esta ocupado");}
+		catch (ExportException e){System.out.println("Error: El servidor ya est√° ejecutandose o el puerto esta ocupado");}
 	}
 	
 	//Constructor del servidor que pone en marcha todos sus servicios y les proporciona la base de datos
