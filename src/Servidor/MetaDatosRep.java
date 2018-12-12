@@ -1,10 +1,3 @@
-//////////////////////////////////////////
-//Nombre: Miroslav Krasimirov Vladimirov//
-//Centro Asociado: Cantabria			//
-//NIE: X4780953N						//
-//Email: mkrasimir4@alumno.uned.es 		//
-//		 miro.kv89@gmail.com		   	//
-//////////////////////////////////////////
 package Servidor;
 
 import java.io.Serializable;
@@ -72,7 +65,7 @@ public class MetaDatosRep implements Serializable{
 		return null;
 	}
 	
-	//Metodo que añade un nuevo cliente a la base de datos
+	//Metodo que aÃ±ade un nuevo cliente a la base de datos
 	public void nuevoCliente(String CN, String CID, String CF, String CP){
 		listaCl.add(new MetaDatosCl(CN, CID, CF, CP));
 	}
